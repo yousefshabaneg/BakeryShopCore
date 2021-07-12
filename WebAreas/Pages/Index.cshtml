@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <ul class="nav navbar-nav">
+            <li><a asp-page="/index" asp-area="Administration" target="_blank">Administration</a></li>
+            <li><a asp-page="/index" asp-area="Courses" target="_blank">Courses</a></li>
+            <li><a asp-page="/index" asp-area="Shopping" target="_blank">Shopping</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        @*<h2>@ViewData["Name"]</h2>
+            <h2>@Model.Name</ h2>*@
+    </div>
+</div>

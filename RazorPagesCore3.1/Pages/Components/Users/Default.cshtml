@@ -1,0 +1,8 @@
+﻿@model List<WebRazor.User>
+<h2>All Users</h2>
+<ul>
+    @foreach (var user in Model)
+    {
+        <li>@user.Name</li>
+    }
+</ul>

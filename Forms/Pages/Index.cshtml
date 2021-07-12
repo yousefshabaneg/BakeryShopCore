@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" name="emailAddress" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="file" asp-for="Upload" />
+        <input type="submit" />
+    </div>
+</form>
+

@@ -1,0 +1,14 @@
+﻿@page "{handler?}/{id?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        @await Component.InvokeAsync("Users");
+    </div>
+    <div class="col-md-3">
+        @await Component.InvokeAsync("User", new Random().Next(1, 10));
+    </div>
+</div>
