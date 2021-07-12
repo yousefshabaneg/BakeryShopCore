@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
+  color:#808080;
   margin-bottom: 60px;
 }
 .footer {
@@ -74,4 +74,49 @@ body {
 
 .navbar-nav{
     justify-content:flex-end;
+}
+a:link{
+    color:aqua;
+    text-decoration:none;
+}
+a:hover{
+    color:brown;
+}
+a:active{
+    color:yellowgreen;
+}
+a.order-button, a.order-button:hover{
+    color:burlywood;
+
+}
+.productInfo, .action{
+    max-width:200px;
+}
+p{
+    font-size:0.8rem;
+}
+#orderProcess li{
+    color:chartreuse;
+    display:inline;
+    font-size:1.2rem;
+    margin-right:15px;
+    padding:3px 0 0 5px;
+}
+.step-number{
+    background-color:darkseagreen;
+    border:1px solid brown;
+    font-size:1.5rem;
+    margin-right:5px;
+    padding:3px 10px;
+}
+.current .step-number{
+    background-color:fuchsia;
+    border-color:dodgerblue;
+    color:powderblue;
+}
+.orderPageList{
+    padding-inline-start:20px;
+}
+.actions .order-button{
+    margin-left:20px;
 }
